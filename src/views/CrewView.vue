@@ -3,5 +3,5 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    Home page
+    Crew page
 </template>

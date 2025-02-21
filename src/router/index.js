@@ -1,23 +1,39 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory} from 'vue-router';
+import CrewView from '@/views/CrewView.vue';
+import NotFoundView from '@/views/NotFoundView.vue';
+import DestinationView from '@/views/DestinationView.vue';
+import TechnologyView from '@/views/TechnologyView.vue';
+import HomeView from '@/views/HomeView.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
-    },
-  ],
-})
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: HomeView,
+        },
+        {
+            path: '/destination',
+            name: 'destination',
+            component: DestinationView,
+        },
+        {
+            path: '/crew',
+            name: 'crew',
+            component: CrewView,
+        },
+        {
+            path: '/technology',
+            name: 'technology',
+            component: TechnologyView,
+        },
+        {
+            path: '/:catchAll(.*)',
+            name: 'not-found',
+            component: NotFoundView,
+        },
+    ]
+});
 
-export default router
+export default router;

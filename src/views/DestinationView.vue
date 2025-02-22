@@ -19,22 +19,22 @@ import { RouterLink } from 'vue-router';
             </div>
             <img :src="moonimg" alt="Space" class="absolute w-110 h-110 ml-3">
         </div>
-        <div class="right-side mt-110">
-            <div class="buttons">
-                <button >
+        <div class="right-side mt-120">
+            <div class="buttons text-[25px]">
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
                     MOON
                 </button>
-                <button>
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
                     MARS
                 </button>
-                <button>
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
                     EUROPA
                 </button>
-                <button>
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
                     TITAN
                 </button>
             </div>
-            <div class="right-side-heading mt-5">
+            <div class="right-side-heading mt-10">
                 MOON
             </div>
             <div class="right-side-description text-[18px] text-blue-200 max-w-110">

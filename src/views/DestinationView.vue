@@ -7,23 +7,28 @@ import europaimg from '@/assets/img/europa-image.png';
 import { ref } from 'vue';
 
 const img = ref(moonimg);
+const imgstring = ref('moon');
 
-// const isActive = (img) => {
-//     if (img)
-// }
+const isActive = (image) => {
+    return image == imgstring.value
+}
 
 const moon = () => {
     img.value = moonimg;
+    imgstring.value = 'moon'
 }
 
 const mars = () => {
     img.value = marsimg;
+    imgstring.value = 'mars'
 }
 const europa = () => {
     img.value = europaimg;
+    imgstring.value = 'europa'
 }
 const titan = () => {
     img.value = titanimg;
+    imgstring.value = 'titan'
 }
 
 const rsh = () => {
@@ -100,17 +105,16 @@ const lsimg = () => {
         </div>
         <div class="right-side mt-120">
             <div class="buttons text-[25px]">
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="moon">
-                    <!-- :class="[isActiveLink('/') ? 'bg-green-900 hover:bg-gray-900' : 'hover:bg-green-900', 'text-white', 'hover:bg-gray-900', 'transition', 'duration-300', 'hover:text-white', 'rounded-md', 'px-3', 'py-2']" -->
+                <button :class="[isActive('moon') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="moon">
                     MOON
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="mars">
+                <button :class="[isActive('mars') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="mars">
                     MARS
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="europa">
+                <button :class="[isActive('europa') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="europa">
                     EUROPA
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="titan">
+                <button :class="[isActive('titan') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="titan">
                     TITAN
                 </button>
             </div>

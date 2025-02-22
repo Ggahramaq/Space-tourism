@@ -32,3 +32,20 @@ span{
 .number {
   font-family: "Barlow Condensed", sans-serif;
 }
+
+.right-side-heading {
+  font-family: "Bellefair", sans-serif;
+  font-size: 100px;
+}
+
+.right-side-description{
+  font-family: "Roboto", sans-serif;
+}
+
+.d-heading{
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.d-data{
+  font-family: "Bellefair", sans-serif;
+}

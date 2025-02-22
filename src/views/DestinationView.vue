@@ -1,7 +1,44 @@
 <script setup>
 import background from '@/assets/img/destination-bg.jpg';
 import moonimg from '@/assets/img/moon-image.png';
+import marsimg from '@/assets/img/mars-image.png';
+import titanimg from '@/assets/img/titan-image.png';
+import europaimg from '@/assets/img/europa-image.png';
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+
+const img = ref('moonimg');
+
+// const isActive = (img) => {
+//     if (img)
+// }
+
+const moon = () => {
+    img.value = 'moonimg';
+}
+
+const mars = () => {
+    img.value = 'marsimg';
+}
+const europa = () => {
+    img.value = 'europaimg';
+}
+const titan = () => {
+    img.value = 'titanimg';
+}
+
+const rsh = () => {
+    switch (img.value) {
+        case 'moonimg':
+            return 'MOON'
+        case 'marsimg':
+            return 'MARS'
+        case 'europaimg':
+            return 'EUROPA'
+        case 'titanimg':
+            return 'TITAN'
+    }
+}
 </script>
 
 <template>
@@ -21,21 +58,21 @@ import { RouterLink } from 'vue-router';
         </div>
         <div class="right-side mt-120">
             <div class="buttons text-[25px]">
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="moon">
                     MOON
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="mars">
                     MARS
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="europa">
                     EUROPA
                 </button>
-                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400">
+                <button class="mr-8 cursor-pointer transition duration-200 ease-out hover:text-green-400" @click="titan">
                     TITAN
                 </button>
             </div>
             <div class="right-side-heading mt-10">
-                MOON
+                {{rsh()}}
             </div>
             <div class="right-side-description text-[18px] text-blue-200 max-w-110">
                 See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.

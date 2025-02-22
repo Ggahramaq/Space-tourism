@@ -6,11 +6,6 @@
   letter-spacing: 2.35px;
 }
 
-/* .navbar {
-  background-color: transparent;
-  position: absolute;
-} */
-
 span{
   font-family: "Bellefair", serif;
 }
@@ -27,4 +22,13 @@ span{
 
 .main-btn {
   font-family: "Bellefair", sans-serif;
+}
+
+.destination-heading {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.3px;
+}
+
+.number {
+  font-family: "Barlow Condensed", sans-serif;
 }

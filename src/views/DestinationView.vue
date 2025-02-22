@@ -19,38 +19,34 @@ import { RouterLink } from 'vue-router';
             </div>
             <img :src="moonimg" alt="Space" class="absolute w-110 h-110 ml-3">
         </div>
-        <div class="right-side mt-90">
+        <div class="right-side mt-110">
             <div class="buttons cursor-pointer">
                 MOON
                 MARS
                 EUROPA
                 TITAN
             </div>
-            <br>
-            <div class="right-side-heading">
+            <div class="right-side-heading mt-5">
                 MOON
             </div>
-            <br>
-            <!-- <div class="right-side-description">
+            <div class="right-side-description text-[18px] text-blue-200 max-w-110">
                 See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
             </div>
-            <br> -->
-            <div class="line"></div>
-            <br>   
-            <div class="flex justify-between">
+            <div class="line w-112 h-[0.1px] mt-3 bg-zinc-400"></div>
+            <div class="flex mt-3 justify-between">
                 <div class="distance">
-                    <div class="d-heading">
+                    <div class="d-heading text-blue-200">
                         AVG. DISTANCE
                     </div>
-                    <div class="d-data">
+                    <div class="d-data mt-1 text-4xl">
                         384,400 KM
                     </div>
                 </div>
                 <div class="travel-time">
-                    <div class="d-heading">
+                    <div class="d-heading text-blue-200">
                         EST. TRAVEL TIME
                     </div>
-                    <div class="d-data">
+                    <div class="d-data mt-1 text-4xl">
                         3 DAYS
                     </div>
                 </div>

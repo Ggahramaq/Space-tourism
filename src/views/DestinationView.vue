@@ -105,16 +105,16 @@ const lsimg = () => {
         </div>
         <div class="right-side mt-120">
             <div class="buttons text-[25px]">
-                <button :class="[isActive('moon') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="moon">
+                <button :class="[isActive('moon') ? 'text-green-400 hover:text-green-600' : 'hover:text-green-400', 'mr-8', 'cursor-pointer', 'transition', 'duration-200', 'ease-out']" @click="moon">
                     MOON
                 </button>
-                <button :class="[isActive('mars') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="mars">
+                <button :class="[isActive('mars') ? 'text-green-400 hover:text-green-600' : 'hover:text-green-400', 'mr-8', 'cursor-pointer', 'transition', 'duration-200', 'ease-out']" @click="mars">
                     MARS
                 </button>
-                <button :class="[isActive('europa') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="europa">
+                <button :class="[isActive('europa') ? 'text-green-400 hover:text-green-600' : 'hover:text-green-400', 'mr-8', 'cursor-pointer', 'transition', 'duration-200', 'ease-out']" @click="europa">
                     EUROPA
                 </button>
-                <button :class="[isActive('titan') ? 'mr-8 cursor-pointer transition text-green-400 duration-200 ease-out hover:text-green-600' : 'mr-8 hover:text-green-400 cursor-pointer transition duration-200 ease-out']" @click="titan">
+                <button :class="[isActive('titan') ? 'text-green-400 hover:text-green-600' : 'hover:text-green-400', 'mr-8', 'cursor-pointer', 'transition', 'duration-200', 'ease-out']" @click="titan">
                     TITAN
                 </button>
             </div>

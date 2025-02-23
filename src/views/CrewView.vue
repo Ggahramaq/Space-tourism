@@ -97,10 +97,10 @@ const isActive = (name) => {
                 </div>
                 <br>
                 <div class="flex mt-10">
-                    <button :class="[isActive('hurley') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="hurleyBtn"></button>
-                    <button :class="[isActive('mark') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="markBtn"></button>
-                    <button :class="[isActive('victor') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="victorBtn"></button>
-                    <button :class="[isActive('anousheh') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="anoushehBtn"></button>
+                    <button :class="[isActive('hurley') ? 'bg-zinc-600 hover:bg-zinc-800' : 'bg-zinc-400 hover:bg-zinc-600', 'transition', 'duration-200', 'ease-out', 'border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="hurleyBtn"></button>
+                    <button :class="[isActive('mark') ? 'bg-zinc-600 hover:bg-zinc-800' : 'bg-zinc-400 hover:bg-zinc-600', 'transition', 'duration-200', 'ease-out', 'border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="markBtn"></button>
+                    <button :class="[isActive('victor') ? 'bg-zinc-600 hover:bg-zinc-800' : 'bg-zinc-400 hover:bg-zinc-600', 'transition', 'duration-200', 'ease-out', 'border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="victorBtn"></button>
+                    <button :class="[isActive('anousheh') ? 'bg-zinc-600 hover:bg-zinc-800' : 'bg-zinc-400 hover:bg-zinc-600', 'transition', 'duration-200', 'ease-out', 'border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="anoushehBtn"></button>
                 </div>
             </div>
         <div class="right-side mt-111">

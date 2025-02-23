@@ -80,7 +80,7 @@ const dynamicDescription = () => {
                 <div class="role text-zinc-400 mt-30">
                     {{dynamicRole()}}
                 </div>
-                <div class="role text-[60px] max-w-140 mt-2">
+                <div class="role text-[60px] mt-2">
                     {{dynamicName()}}
                 </div>
                 <div class="rdescription mt-2 max-w-145 text-blue-200 text-[18px]">

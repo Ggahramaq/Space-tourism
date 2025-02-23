@@ -27,6 +27,7 @@ span{
 .destination-heading {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4.3px;
+  white-space: nowrap;
 }
 
 .number {
@@ -56,6 +57,7 @@ span{
 
 .role { 
   font-family: "Bellefair", sans-serif;
+  white-space: nowrap;
 }
 
 .rdescription {

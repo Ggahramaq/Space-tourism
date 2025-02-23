@@ -3,7 +3,6 @@ import background from '@/assets/img/technology-bg.jpg';
 import lv from '@/assets/img/launchvehicle.jpg';
 import sc from '@/assets/img/spacecapsule.jpg';
 import sp from '@/assets/img/spaceport.jpg';
-import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
 
 const img = ref(lv);
@@ -45,7 +44,7 @@ const isActive = (name) => {
     <img :src="background" class="absolute top-0 left-0 w-full h-full object-cover" />
         <div class="mb-10 ml-40 absolute flex items-center text-white text-3xl h-105 w-277 justify-between">
             <div class="left-side">
-                <div class="flex ml-4 mt-95">
+                <div class="flex ml-4 mt-75">
                     <div class="number font-bold text-zinc-500">                
                         03
                     </div>
@@ -53,32 +52,32 @@ const isActive = (name) => {
                         SPACE LAUNCH 101
                     </div>
                 </div>
-                <div class="flex mt-20">
-                    <div class="left mt-10">
-                        <div :class="[isActive('LAUNCH VEHICLE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="lvBtn"><div class="mt-3 ml-6">
+                <div class="flex mt-30">
+                    <div class="left">
+                        <div :class="[isActive('LAUNCH VEHICLE') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-blue-400 hover:text-black border-white text-white bg-transparent', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="lvBtn"><div class="mt-3 ml-6">
                             1
                         </div>
                     </div>
                         <br>
-                        <div :class="[isActive('SPACEPORT') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="spBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACEPORT') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-blue-400 hover:text-black border-white text-white bg-none', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="spBtn"><div class="mt-3 ml-5">
                             2
                         </div>
                     </div>
                         <br>
-                        <div :class="[isActive('SPACE CAPSULE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="scBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACE CAPSULE') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-blue-400 hover:text-black border-white text-white bg-none', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="scBtn"><div class="mt-3 ml-5">
                             3
                         </div>
                     </div>
                     </div>
                     <div class="right ml-15">
-                        <div class="t-main text-[40px] text-zinc-400">THE TERMINOLOGY...</div>
-                        <div class="t-head mt-5 text-[65px]">{{imgstring}}</div>
-                        <div class="t-description mt-3 text-[27px] text-blue-200 max-w-218">{{showDescription(imgstring)}}</div>
+                        <div class="t-main mt-[-10px] text-[40px] text-zinc-400 absolute">THE TERMINOLOGY...</div>
+                        <div class="t-head mt-11 text-[65px] absolute">{{imgstring}}</div>
+                        <div class="t-description mt-31 text-[23px] text-blue-200 absolute max-w-160">{{showDescription(imgstring)}}</div>
                     </div>
                 </div>
             </div>
         <div class="right-side">
-            <img :src="img" alt="asd" class="h-120 mt-105 ml-42 border-0 rounded-lg">
+            <img :src="img" alt="asd" class="h-120 mt-110 ml-120 border-0 rounded-lg">
         </div>
     </div>
   </div>

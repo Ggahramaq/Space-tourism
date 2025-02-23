@@ -55,17 +55,17 @@ const isActive = (name) => {
                 </div>
                 <div class="flex mt-30">
                     <div class="left">
-                        <div :class="[isActive('LAUNCH VEHICLE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="lvBtn"><div class="mt-3 ml-6">
+                        <div :class="[isActive('LAUNCH VEHICLE') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-blue-400 hover:text-black border-white text-white bg-transparent', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="lvBtn"><div class="mt-3 ml-6">
                             1
                         </div>
                     </div>
                         <br>
-                        <div :class="[isActive('SPACEPORT') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="spBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACEPORT') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-white hover:text-black border-white text-white bg-none', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="spBtn"><div class="mt-3 ml-5">
                             2
                         </div>
                     </div>
                         <br>
-                        <div :class="[isActive('SPACE CAPSULE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="scBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACE CAPSULE') ? 'bg-white text-black hover:bg-transparent hover:text-blue-400' : 'hover:bg-white hover:text-black border-white text-white bg-none', 'transition', 'duration-200', 'ease-out', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="scBtn"><div class="mt-3 ml-5">
                             3
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const isActive = (name) => {
                 </div>
             </div>
         <div class="right-side">
-            <img :src="img" alt="asd" class="h-120 mt-105 ml-120 border-0 rounded-lg">
+            <img :src="img" alt="asd" class="h-120 mt-110 ml-120 border-0 rounded-lg">
         </div>
     </div>
   </div>

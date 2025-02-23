@@ -1,83 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Roboto:ital,wght@0,200;1,200&display=swap');
 @import "tailwindcss";
 
-.link {
+.link, .heading, .destination-heading, .number, .d-heading, .buttons {
   font-family: "Barlow Condensed", sans-serif;
+}
+
+.description, .right-side-description, .rdescription, .t-description {
+  font-family: "Roboto", sans-serif;
+}
+
+span, .main-btn, .right-side-heading, .d-data, .role, .left, .t-main, .t-head {
+  font-family: "Bellefair", sans-serif;
+}
+
+.destination-heading, .role, .t-main, .t-head {
+  white-space: nowrap;
+}
+
+.link, .destination-heading {
+  letter-spacing: 4.3px;
+}
+
+.link {
   letter-spacing: 2.35px;
 }
 
-span{
-  font-family: "Bellefair", serif;
-}
-
-.heading {
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 4.3px;
-}
-
 .description {
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0px;
 }
 
-.main-btn {
-  font-family: "Bellefair", sans-serif;
-}
-
-.destination-heading {
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 4.3px;
-  white-space: nowrap;
-}
-
-.number {
-  font-family: "Barlow Condensed", sans-serif;
-}
-
 .right-side-heading {
-  font-family: "Bellefair", sans-serif;
   font-size: 100px;
-}
-
-.right-side-description{
-  font-family: "Roboto", sans-serif;
-}
-
-.d-heading{
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.d-data{
-  font-family: "Bellefair", sans-serif;
-}
-
-.buttons {
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.role { 
-  font-family: "Bellefair", sans-serif;
-  white-space: nowrap;
-}
-
-.rdescription {
-  font-family: "Roboto", sans-serif;
-}
-
-.left {
-  font-family: "Bellefair", sans-serif;
-}
-
-.t-main {
-  font-family: "Bellefair", sans-serif;
-  white-space: nowrap;
-}
-
-.t-head{
-  font-family: "Bellefair", sans-serif;
-  white-space: nowrap;
-}
-
-.t-description{
-  font-family: "Roboto", sans-serif;
 }

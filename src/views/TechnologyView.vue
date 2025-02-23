@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
 
 const img = ref(lv);
-const imgstring = ref('lv')
+const imgstring = ref('LAUNCH VEHICLE')
 
 const lvBtn = () => {
     img.value = lv
@@ -22,6 +22,17 @@ const scBtn = () => {
 const spBtn = () => {
     img.value = sp
     imgstring.value = 'SPACEPORT'
+}
+
+const showDescription = (name) => {
+    switch (name) {
+        case 'LAUNCH VEHICLE':
+            return `A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`;
+        case 'SPACEPORT':
+            return `A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`;
+        case 'SPACE CAPSULE':
+            return `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`;
+    }
 }
 </script>
 
@@ -58,7 +69,7 @@ const spBtn = () => {
                     <div class="right ml-15">
                         <div class="t-main text-[40px] text-zinc-400">THE TERMINOLOGY...</div>
                         <div class="t-head mt-5 text-[65px]">{{imgstring}}</div>
-                        <div class="t-description mt-3 text-[27px] text-blue-200 max-w-218">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</div>
+                        <div class="t-description mt-3 text-[27px] text-blue-200 max-w-218">{{showDescription(imgstring)}}</div>
                     </div>
                 </div>
             </div>

@@ -34,6 +34,10 @@ const showDescription = (name) => {
             return `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`;
     }
 }
+
+const isActive = (name) => {
+    return name === imgstring.value;
+}
 </script>
 
 <template>
@@ -51,17 +55,17 @@ const showDescription = (name) => {
                 </div>
                 <div class="flex mt-20">
                     <div class="left mt-10">
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white text-white cursor-pointer" @click="lvBtn"><div class="mt-3 ml-6">
+                        <div :class="[isActive('LAUNCH VEHICLE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="lvBtn"><div class="mt-3 ml-6">
                             1
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white cursor-pointer text-white" @click="spBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACEPORT') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="spBtn"><div class="mt-3 ml-5">
                             2
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none cursor-pointer border-white text-white" @click="scBtn"><div class="mt-3 ml-5">
+                        <div :class="[isActive('SPACE CAPSULE') ? 'bg-white text-black' : 'border-white text-white bg-none', 'h-15', 'w-15', 'aspect-square', 'border', 'rounded-full', 'cursor-pointer']" @click="scBtn"><div class="mt-3 ml-5">
                             3
                         </div>
                     </div>

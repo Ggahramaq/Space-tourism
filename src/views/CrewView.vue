@@ -37,6 +37,18 @@ const dynamicRole = () => {
     };
 }
 
+const dynamicName = () => {
+    switch (img.value) {
+        case hurley:
+            return 'DOUGLAS HURLEY';
+        case mark:
+            return 'MARK SHUTTLEWORTH';
+        case victor:
+            return 'VICTOR GLOVER';
+        case anousheh:
+            return 'ANOUSHEH ANSARI'
+    };
+}
 </script>
 
 <template>
@@ -44,7 +56,7 @@ const dynamicRole = () => {
     <img :src="background" class="absolute top-0 left-0 w-full h-full object-cover" />
         <div class="mb-10 ml-40 absolute flex items-center text-white text-3xl h-105 w-277 justify-between">
             <div class="left-side">
-                <div class="flex mt-110">
+                <div class="flex mt-105">
                     <div class="number font-bold text-zinc-500">                
                         02
                     </div>
@@ -55,14 +67,14 @@ const dynamicRole = () => {
                 <div class="role text-zinc-400 mt-30">
                     {{dynamicRole()}}
                 </div>
-                <div class="role text-[60px] mt-2">
-                    DOUGLAS HURLEY
+                <div class="role text-[60px] max-w-140 mt-2">
+                    {{dynamicName()}}
                 </div>
                 <div class="rdescription mt-2 max-w-145 text-blue-200 text-[18px]">
                     Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
                 </div>
                 <br>
-                <div class="flex mt-30">
+                <div class="flex mt-10">
                     <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="hurleyBtn"></button>
                     <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="markBtn"></button>
                     <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="victorBtn"></button>

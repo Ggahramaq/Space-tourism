@@ -1,6 +1,5 @@
 <script setup>
 import background from '@/assets/img/destination-bg.jpg';
-import { RouterLink } from 'vue-router';
 </script>
 
 <template>

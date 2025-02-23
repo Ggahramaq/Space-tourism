@@ -97,14 +97,14 @@ const isActive = (name) => {
                 </div>
                 <br>
                 <div class="flex mt-10">
-                    <button :class="[isActive('hurley') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="hurleyBtn"></button>
-                    <button :class="[isActive('mark') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="markBtn"></button>
-                    <button :class="[isActive('victor') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="victorBtn"></button>
-                    <button :class="[isActive('anousheh') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="anoushehBtn"></button>
+                    <button :class="[isActive('hurley') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="hurleyBtn"></button>
+                    <button :class="[isActive('mark') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="markBtn"></button>
+                    <button :class="[isActive('victor') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="victorBtn"></button>
+                    <button :class="[isActive('anousheh') ? 'bg-zinc-600' : 'bg-zinc-400','border', 'rounded-full', 'mr-12', 'cursor-pointer', 'aspect-square', 'h-[20px]', 'w-[20px]']" @click="anoushehBtn"></button>
                 </div>
             </div>
         <div class="right-side mt-111">
-            <img :src="img" alt="" class="h-155">
+            <img :src="img" :alt="dynamicName()" class="h-155">
         </div>
     </div>
   </div>

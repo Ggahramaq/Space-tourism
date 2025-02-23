@@ -7,21 +7,26 @@ import anousheh from '@/assets/img/anousheh.png';
 import { ref } from 'vue';
 
 const img = ref(hurley);
+const imgstring = ref('hurley');
 
 const hurleyBtn = () => {
     img.value = hurley
+    imgstring.value = 'hurley'
 }
 
 const markBtn = () => {
     img.value = mark
+    imgstring.value = 'mark'
 }
 
 const victorBtn = () => {
     img.value = victor
+    imgstring.value = 'victor'
 }
 
 const anoushehBtn = () => {
     img.value = anousheh
+    imgstring.value = 'anousheh'
 }
 
 const dynamicRole = () => {
@@ -62,6 +67,10 @@ const dynamicDescription = () => {
             return 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. '
     };
 }
+
+const isActive = (name) => {
+    return name === imgstring.value;
+}
 </script>
 
 <template>
@@ -88,10 +97,10 @@ const dynamicDescription = () => {
                 </div>
                 <br>
                 <div class="flex mt-10">
-                    <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="hurleyBtn"></button>
-                    <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="markBtn"></button>
-                    <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="victorBtn"></button>
-                    <button class="h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer" @click="anoushehBtn"></button>
+                    <button :class="[isActive('hurley') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="hurleyBtn"></button>
+                    <button :class="[isActive('mark') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="markBtn"></button>
+                    <button :class="[isActive('victor') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="victorBtn"></button>
+                    <button :class="[isActive('anousheh') ? 'h-[20px] w-[20px] bg-zinc-600 aspect-square border rounded-full mr-12 cursor-pointer' : 'h-[20px] w-[20px] bg-zinc-400 aspect-square border rounded-full mr-12 cursor-pointer']" @click="anoushehBtn"></button>
                 </div>
             </div>
         <div class="right-side mt-111">

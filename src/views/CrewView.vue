@@ -3,7 +3,6 @@ import background from '@/assets/img/technology-bg.jpg';
 import lv from '@/assets/img/launchvehicle.jpg';
 import sc from '@/assets/img/spacecapsule.jpg';
 import sp from '@/assets/img/spaceport.jpg';
-import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
 
 const img = ref(lv);

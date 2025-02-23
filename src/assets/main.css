@@ -63,3 +63,21 @@ span{
 .rdescription {
   font-family: "Roboto", sans-serif;
 }
+
+.left {
+  font-family: "Bellefair", sans-serif;
+}
+
+.t-main {
+  font-family: "Bellefair", sans-serif;
+  white-space: nowrap;
+}
+
+.t-head{
+  font-family: "Bellefair", sans-serif;
+  white-space: nowrap;
+}
+
+.t-description{
+  font-family: "Roboto", sans-serif;
+}

@@ -11,17 +11,17 @@ const imgstring = ref('lv')
 
 const lvBtn = () => {
     img.value = lv
-    imgstring.value = 'lv'
+    imgstring.value = 'LAUNCH VEHICLE'
 }
 
 const scBtn = () => {
     img.value = sc
-    imgstring.value = 'sc'
+    imgstring.value = 'SPACE CAPSULE'
 }
 
 const spBtn = () => {
     img.value = sp
-    imgstring.value = 'sp'
+    imgstring.value = 'SPACEPORT'
 }
 </script>
 
@@ -45,19 +45,19 @@ const spBtn = () => {
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white cursor-pointer text-white" @click="scBtn"><div class="mt-3 ml-5">
+                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white cursor-pointer text-white" @click="spBtn"><div class="mt-3 ml-5">
                             2
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none cursor-pointer border-white text-white" @click="spBtn"><div class="mt-3 ml-5">
+                        <div class="h-15 w-15 aspect-square border rounded-full bg-none cursor-pointer border-white text-white" @click="scBtn"><div class="mt-3 ml-5">
                             3
                         </div>
                     </div>
                     </div>
                     <div class="right ml-15">
                         <div class="t-main text-[40px] text-zinc-400">THE TERMINOLOGY...</div>
-                        <div class="t-head mt-5 text-[65px]">LAUNCH VEHICLE</div>
+                        <div class="t-head mt-5 text-[65px]">{{imgstring}}</div>
                         <div class="t-description mt-3 text-[27px] text-blue-200 max-w-218">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</div>
                     </div>
                 </div>

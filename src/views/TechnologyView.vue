@@ -1,8 +1,28 @@
 <script setup>
-import background from '@/assets/img/technology-bg.jpg'
-import img from '@/assets/img/launchvehicle.jpg'
+import background from '@/assets/img/technology-bg.jpg';
+import lv from '@/assets/img/launchvehicle.jpg';
+import sc from '@/assets/img/spacecapsule.jpg';
+import sp from '@/assets/img/spaceport.jpg';
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
 
+const img = ref(lv);
+const imgstring = ref('lv')
+
+const lvBtn = () => {
+    img.value = lv
+    imgstring.value = 'lv'
+}
+
+const scBtn = () => {
+    img.value = sc
+    imgstring.value = 'sc'
+}
+
+const spBtn = () => {
+    img.value = sp
+    imgstring.value = 'sp'
+}
 </script>
 
 <template>
@@ -20,17 +40,17 @@ import { RouterLink } from 'vue-router';
                 </div>
                 <div class="flex mt-20">
                     <div class="left mt-10">
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white text-white"><div class="mt-3 ml-6">
+                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white text-white cursor-pointer" @click="lvBtn"><div class="mt-3 ml-6">
                             1
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white text-white"><div class="mt-3 ml-5">
+                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white cursor-pointer text-white" @click="scBtn"><div class="mt-3 ml-5">
                             2
                         </div>
                     </div>
                         <br>
-                        <div class="h-15 w-15 aspect-square border rounded-full bg-none border-white text-white"><div class="mt-3 ml-5">
+                        <div class="h-15 w-15 aspect-square border rounded-full bg-none cursor-pointer border-white text-white" @click="spBtn"><div class="mt-3 ml-5">
                             3
                         </div>
                     </div>
@@ -43,7 +63,7 @@ import { RouterLink } from 'vue-router';
                 </div>
             </div>
         <div class="right-side">
-            <img :src="img" alt="asd" class="h-120 mt-105 ml-42">
+            <img :src="img" alt="asd" class="h-120 mt-105 ml-42 border-0 rounded-lg">
         </div>
     </div>
   </div>

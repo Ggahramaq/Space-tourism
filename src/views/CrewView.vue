@@ -4,7 +4,6 @@ import hurley from '@/assets/img/hurley.png'
 import mark from '@/assets/img/mark.png';
 import victor from '@/assets/img/victor.png';
 import anousheh from '@/assets/img/anousheh.png';
-import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
 
 const img = ref(hurley);
@@ -28,19 +27,16 @@ const anoushehBtn = () => {
 const dynamicRole = () => {
     switch (img.value) {
         case hurley:
-            console.log('COMMANDER')
             return 'COMMANDER';
         case mark:
-            console.log('MISSION SPECIALIST')
             return 'MISSION SPECIALIST';
         case victor:
-            console.log('PILOT')
             return 'PILOT';
         case anousheh:
-            console.log('FLIGHT ENGINEER')
             return 'FLIGHT ENGINEER'
     };
 }
+
 </script>
 
 <template>
